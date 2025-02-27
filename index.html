@@ -15,12 +15,13 @@
     <div id="root"></div>
     <script type="text/babel">
       //   Write Your Code Here
-      const Welcome = () =>{
-        return(<h1 className="message">Hii user</h1>);
+      const Welcome = (props) =>{
+        const {name,greeting} = props;
+        return(<h1 className="message">{greeting} {name}</h1>);
       };
       
       ReactDOM.render(
-        <Welcome />,
+        <Welcome name ="srinu" greeting="Hello"/>,
         document.getElementById('root')
       );
     </script>
