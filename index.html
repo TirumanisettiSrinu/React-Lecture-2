@@ -19,12 +19,14 @@
         const {name,greeting} = props;
         return(<h1 className="message">{greeting} {name}</h1>);
       };
+      const Message =()=>{
+        return <div>
+        <Welcome name="Srinu" greeting="Hello"/>
+        <Welcome name="React" greeting="Welcome to"/> </div>
+      };
       
       ReactDOM.render(
-        <div>
-        <Welcome name ="srinu" greeting="Hello"/>
-        <Welcome name ="React" greeting="Welcome to"/>
-        </div>,
+        <Message/>,
         document.getElementById('root')
       );
     </script>
